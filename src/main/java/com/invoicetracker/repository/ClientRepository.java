@@ -35,4 +35,5 @@ public interface ClientRepository extends JpaRepository<Client, Long> {
     Page<Client> searchClients(@Param("userId") Long userId,
                                @Param("search") String search,
                                Pageable pageable);
+
 }

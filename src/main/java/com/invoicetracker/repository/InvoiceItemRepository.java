@@ -28,4 +28,5 @@ public interface InvoiceItemRepository extends JpaRepository<InvoiceItem, Long> 
                                           @Param("search") String search);
 
     void deleteByInvoiceId(Long invoiceId);
+
 }

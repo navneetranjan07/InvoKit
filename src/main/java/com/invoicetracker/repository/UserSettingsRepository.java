@@ -14,4 +14,5 @@ public interface UserSettingsRepository extends JpaRepository<UserSettings, Long
     boolean existsByUserId(Long userId);
 
     void deleteByUserId(Long userId);
+
 }

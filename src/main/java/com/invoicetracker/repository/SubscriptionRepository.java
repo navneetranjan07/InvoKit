@@ -40,4 +40,5 @@ public interface SubscriptionRepository extends JpaRepository<Subscription, Long
     long countByPlanType(SubscriptionTier planType);
 
     void deleteByUserId(Long userId);
+
 }

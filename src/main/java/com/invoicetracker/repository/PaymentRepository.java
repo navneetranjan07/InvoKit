@@ -37,4 +37,5 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
     long countByInvoiceId(Long invoiceId);
 
     void deleteByInvoiceId(Long invoiceId);
+
 }

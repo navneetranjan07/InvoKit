@@ -72,4 +72,5 @@ public class Client {
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
     @Builder.Default
     private List<Invoice> invoices = new ArrayList<>();
+
 }

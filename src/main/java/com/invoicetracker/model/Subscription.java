@@ -69,4 +69,5 @@ public class Subscription {
         if (currentPeriodEnd == null) return -1;
         return (int) ChronoUnit.DAYS.between(LocalDateTime.now(), currentPeriodEnd);
     }
+
 }

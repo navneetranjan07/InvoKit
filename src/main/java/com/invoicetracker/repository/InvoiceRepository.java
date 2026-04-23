@@ -97,4 +97,5 @@ public interface InvoiceRepository extends JpaRepository<Invoice, Long> {
            "ORDER BY EXTRACT(YEAR FROM i.paidAt) DESC, EXTRACT(MONTH FROM i.paidAt) DESC")
     List<Object[]> getMonthlyRevenue(@Param("userId") Long userId,
                                      @Param("startDate") LocalDateTime startDate);
+
 }

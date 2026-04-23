@@ -65,4 +65,5 @@ public class PaymentReminder {
     public boolean shouldBeSent() {
         return !isSent && LocalDateTime.now().isAfter(scheduledFor);
     }
+
 }

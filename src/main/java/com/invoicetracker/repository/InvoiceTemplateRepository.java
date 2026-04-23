@@ -23,4 +23,5 @@ public interface InvoiceTemplateRepository extends JpaRepository<InvoiceTemplate
     long countByIsPremiumFalse();
 
     long countByIsPremiumTrue();
+
 }

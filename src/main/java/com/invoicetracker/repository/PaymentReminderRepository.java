@@ -27,4 +27,5 @@ public interface PaymentReminderRepository extends JpaRepository<PaymentReminder
     long countByIsSentFalse();
 
     void deleteByInvoiceId(Long invoiceId);
+
 }

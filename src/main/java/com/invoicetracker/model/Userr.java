@@ -93,4 +93,5 @@ public class Userr {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private List<Subscription> subscriptions = new ArrayList<>();
+
 }

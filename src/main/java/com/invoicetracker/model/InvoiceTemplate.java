@@ -51,4 +51,5 @@ public class InvoiceTemplate {
         if (!isPremium) return true;
         return tier == SubscriptionTier.PRO || tier == SubscriptionTier.PREMIUM;
     }
+
 }

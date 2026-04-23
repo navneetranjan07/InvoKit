@@ -59,4 +59,5 @@ public class InvoiceItem {
             this.amount = quantity.multiply(unitPrice).setScale(2, RoundingMode.HALF_UP);
         }
     }
+
 }

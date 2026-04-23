@@ -78,4 +78,5 @@ public class UserSettings {
     public void incrementInvoiceNumber() {
         this.nextInvoiceNumber++;
     }
+
 }

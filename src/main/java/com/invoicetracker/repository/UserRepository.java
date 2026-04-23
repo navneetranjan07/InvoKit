@@ -20,4 +20,5 @@ public interface UserRepository extends JpaRepository<Userr, Long> {
     List<Userr> findBySubscriptionTier(SubscriptionTier tier);
 
     long countBySubscriptionTier(SubscriptionTier tier);
+
 }
