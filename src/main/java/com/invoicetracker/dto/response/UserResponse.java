@@ -1,7 +1,7 @@
 package com.invoicetracker.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.invoicetracker.model.User;
+import com.invoicetracker.model.Userr;
 import com.invoicetracker.model.enums.SubscriptionTier;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,7 +33,7 @@ public class UserResponse {
 
     // ========== Static Factory Method ==========
 
-    public static UserResponse fromEntity(User user) {
+    public static UserResponse fromEntity(Userr user) {
         return UserResponse.builder()
                 .id(user.getId())
                 .email(user.getEmail())
