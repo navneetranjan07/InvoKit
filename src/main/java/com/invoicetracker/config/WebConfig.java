@@ -17,7 +17,7 @@ public class WebConfig {
 
         config.setAllowedOrigins(Arrays.asList(
                 "http://localhost:5173",
-                "https://invokit-frontend.vercel.app"
+                "https://invokit-frontend.vercel.app/"
         ));
 
         config.setAllowedMethods(Arrays.asList(
