@@ -97,19 +97,19 @@ InvoKit/
 
 ## ⚙️ Installation & Setup
 
-### 🔹 Clone Repository
+### Clone Repository
 ```bash
 git clone https://github.com/navneetranjan07/InvoKit.git
 ```
-cd InvoKit
+- cd InvoKit
 
-🔹Backend Setup (Spring Boot)
-  cd backend
-  1.Configure application.properties:
-    spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
-    spring.datasource.username=your_username
-    spring.datasource.password=your_password
-    spring.jpa.hibernate.ddl-auto=update
+- Backend Setup (Spring Boot)
+- cd backend
+  - 1.Configure application.properties:
+   - spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+   - spring.datasource.username=your_username
+   - spring.datasource.password=your_password
+   - spring.jpa.hibernate.ddl-auto=update
 
   2.Run the application:
     mvn spring-boot:run
