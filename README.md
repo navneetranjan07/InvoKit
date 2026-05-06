@@ -1,6 +1,17 @@
 # 🚀 InvoKit – Smart Invoice & Business Management System
 
-![InvoKit Banner](https://via.placeholder.com/1200x400?text=InvoKit+Project)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4facfe,100:00f2fe&height=200&section=header&text=InvoKit&fontSize=40&fontAlignY=35&animation=fadeIn" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/navneetranjan07/InvoKit?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/navneetranjan07/InvoKit?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/navneetranjan07/InvoKit?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/navneetranjan07/InvoKit?style=for-the-badge" />
+</p>
+
+---
 
 ## 📌 Overview
 **InvoKit** is a full-stack invoice and business management system designed for freelancers, startups, and small businesses. It allows users to create, manage, and track invoices, customers, and transactions efficiently.
@@ -53,6 +64,12 @@ The project focuses on real-world financial workflows including secure authentic
 ---
 
 ## 🏗️ Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring,react,tailwind,js,html,css,git,github,vscode" />
+
+</p>
 
 ### 🔙 Backend
 - Java
