@@ -76,19 +76,18 @@ The project focuses on real-world financial workflows including secure authentic
 ## 📂 Project Structure
 
 InvoKit/
-│
 ├── backend/ # Spring Boot application
-│ ├── controller/
-│ ├── service/
-│ ├── repository/
-│ ├── model/
-│ └── security/
+│ ├── controller/ # REST controllers
+│ ├── service/ # Business logic
+│ ├── repository/ # Database layer
+│ ├── model/ # Entities / Models
+│ └── security/ # JWT & security config
 │
 ├── frontend/ # React application
-│ ├── components/
-│ ├── pages/
-│ ├── services/
-│ └── assets/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # App pages/screens
+│ ├── services/ # API calls
+│ └── assets/ # Images, styles, etc.
 │
 └── README.md
 
