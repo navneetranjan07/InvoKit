@@ -105,49 +105,49 @@ git clone https://github.com/navneetranjan07/InvoKit.git
 
 - Backend Setup (Spring Boot)
 - cd backend
-  - 1.Configure application.properties:
+  - 1. Configure application.properties:
    - spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
    - spring.datasource.username=your_username
    - spring.datasource.password=your_password
    - spring.jpa.hibernate.ddl-auto=update
 
-  2.Run the application:
-    mvn spring-boot:run
+  - 2. Run the application:
+   - mvn spring-boot:run
 ---
 
-🔹Frontend Setup (React)
-  cd frontend
-  npm install
-  npm run dev
+- Frontend Setup (React)
+ - cd frontend
+ - npm install
+ - npm run dev
 ---
 
-🔐 API Endpoints (Sample)
-  Method	Endpoint	Description
-  POST	/auth/register	Register user
-  POST	/auth/login	Login
-  GET	/accounts	Get user accounts
-  POST	/transactions	Transfer money
-  GET	/invoices	Fetch invoices
+- API Endpoints (Sample)
+ - Method	Endpoint	Description
+ - POST	/auth/register	Register user
+ - POST	/auth/login	Login
+ - GET	/accounts	Get user accounts
+ - POST	/transactions	Transfer money
+ - GET	/invoices	Fetch invoices
 ---
 
-🧠 Future Improvements
-  Payment gateway integration
-  Email invoice sending
-  PDF invoice generation
-  Analytics & reports
-  Multi-currency support
-  Audit logs & fraud detection
-  ATM-like transaction simulation
+- Future Improvements
+ - Payment gateway integration
+ - Email invoice sending
+ - PDF invoice generation
+ - Analytics & reports
+ - Multi-currency support
+ - Audit logs & fraud detection
+ - ATM-like transaction simulation
 ---
 
-👨‍💻 Author
-  Navneet Ranjan
-  GitHub: https://github.com/navneetranjan07
+- 👨‍💻 Author
+ - Navneet Ranjan
+ - GitHub: https://github.com/navneetranjan07
 ---
 
-⭐ Show Your Support
+- ⭐ Show Your Support
 
-If you like this project
-  ⭐ Star the repo
-  🍴 Fork it
-  🛠️ Contribute
+- If you like this project
+ - ⭐ Star the repo
+ - 🍴 Fork it
+ - 🛠️ Contribute
