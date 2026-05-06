@@ -141,13 +141,13 @@ git clone https://github.com/navneetranjan07/InvoKit.git
 ---
 
 - 👨‍💻 Author
- - Navneet Ranjan
- - GitHub: https://github.com/navneetranjan07
+  Navneet Ranjan
+  GitHub: https://github.com/navneetranjan07
 ---
 
 - ⭐ Show Your Support
 
 - If you like this project
- - ⭐ Star the repo
- - 🍴 Fork it
- - 🛠️ Contribute
+  ⭐ Star the repo
+  🍴 Fork it
+  🛠️ Contribute
