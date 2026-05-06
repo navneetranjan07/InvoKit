@@ -20,9 +20,13 @@ import java.time.temporal.ChronoUnit;
 @Builder
 public class Subscription {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "subscriptions_seq_gen")
+//    @SequenceGenerator(name = "subscriptions_seq_gen", sequenceName = "subscriptions_seq", allocationSize = 1)
+//    private Long id;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "subscriptions_seq_gen")
-    @SequenceGenerator(name = "subscriptions_seq_gen", sequenceName = "subscriptions_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)

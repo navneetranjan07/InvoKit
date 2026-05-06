@@ -17,9 +17,13 @@ import java.time.LocalDateTime;
 @Builder
 public class PaymentReminder {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "payment_reminders_seq_gen")
+//    @SequenceGenerator(name = "payment_reminders_seq_gen", sequenceName = "payment_reminders_seq", allocationSize = 1)
+//    private Long id;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "payment_reminders_seq_gen")
-    @SequenceGenerator(name = "payment_reminders_seq_gen", sequenceName = "payment_reminders_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)

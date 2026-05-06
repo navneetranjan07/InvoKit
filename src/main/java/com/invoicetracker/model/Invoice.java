@@ -25,9 +25,13 @@ import java.util.List;
 @Builder
 public class Invoice {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "invoices_seq_gen")
+//    @SequenceGenerator(name = "invoices_seq_gen", sequenceName = "invoices_seq", allocationSize = 1)
+//    private Long id;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "invoices_seq_gen")
-    @SequenceGenerator(name = "invoices_seq_gen", sequenceName = "invoices_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -85,10 +89,12 @@ public class Invoice {
     @Builder.Default
     private String currency = "USD";
 
-    @Lob
+//    @Lob
+@Column(columnDefinition = "TEXT")
     private String notes;
 
-    @Lob
+//    @Lob
+@Column(columnDefinition = "TEXT")
     private String terms;
 
     @Column(name = "payment_method", length = 100)

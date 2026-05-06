@@ -17,9 +17,13 @@ import java.time.LocalDateTime;
 @Builder
 public class InvoiceTemplate {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "invoice_templates_seq_gen")
+//    @SequenceGenerator(name = "invoice_templates_seq_gen", sequenceName = "invoice_templates_seq", allocationSize = 1)
+//    private Long id;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "invoice_templates_seq_gen")
-    @SequenceGenerator(name = "invoice_templates_seq_gen", sequenceName = "invoice_templates_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank

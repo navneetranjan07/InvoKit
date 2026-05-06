@@ -17,9 +17,13 @@ import java.time.LocalDateTime;
 @Builder
 public class UserSettings {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_settings_seq_gen")
+//    @SequenceGenerator(name = "user_settings_seq_gen", sequenceName = "user_settings_seq", allocationSize = 1)
+//    private Long id;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_settings_seq_gen")
-    @SequenceGenerator(name = "user_settings_seq_gen", sequenceName = "user_settings_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @OneToOne(fetch = FetchType.LAZY)

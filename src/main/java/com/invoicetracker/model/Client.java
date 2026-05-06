@@ -20,9 +20,13 @@ import java.util.List;
 @Builder
 public class Client {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "clients_seq_gen")
+//    @SequenceGenerator(name = "clients_seq_gen", sequenceName = "clients_seq", allocationSize = 1)
+//    private Long id;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "clients_seq_gen")
-    @SequenceGenerator(name = "clients_seq_gen", sequenceName = "clients_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -42,7 +46,8 @@ public class Client {
     @Column(name = "company_name")
     private String companyName;
 
-    @Lob
+//    @Lob
+@Column(columnDefinition = "TEXT")
     private String address;
 
     @Column(length = 100)
@@ -54,7 +59,8 @@ public class Client {
     @Column(name = "tax_id", length = 100)
     private String taxId;
 
-    @Lob
+//    @Lob
+@Column(columnDefinition = "TEXT")
     private String notes;
 
     @Column(name = "is_active")

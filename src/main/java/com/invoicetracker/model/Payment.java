@@ -18,9 +18,13 @@ import java.time.LocalDateTime;
 @Builder
 public class Payment {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "payments_seq_gen")
+//    @SequenceGenerator(name = "payments_seq_gen", sequenceName = "payments_seq", allocationSize = 1)
+//    private Long id;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "payments_seq_gen")
-    @SequenceGenerator(name = "payments_seq_gen", sequenceName = "payments_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -41,7 +45,8 @@ public class Payment {
     @Column(name = "reference_number")
     private String referenceNumber;
 
-    @Lob
+//    @Lob
+@Column(columnDefinition = "TEXT")
     private String notes;
 
     @CreationTimestamp

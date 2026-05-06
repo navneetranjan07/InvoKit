@@ -11,6 +11,7 @@ import com.invoicetracker.repository.PaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional; //added later
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -24,6 +25,7 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional(readOnly = true) //added later
 public class DashboardService {
 
     @Autowired
