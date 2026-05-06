@@ -140,7 +140,7 @@ git clone https://github.com/navneetranjan07/InvoKit.git
  - ATM-like transaction simulation
 ---
 
-- 👨‍💻 Author
+- 👨‍💻 Author: 
   Navneet Ranjan
   GitHub: https://github.com/navneetranjan07
 ---
@@ -148,6 +148,6 @@ git clone https://github.com/navneetranjan07/InvoKit.git
 - ⭐ Show Your Support
 
 - If you like this project
-  ⭐ Star the repo
-  🍴 Fork it
+  ⭐ Star the repo | 
+  🍴 Fork it | 
   🛠️ Contribute
