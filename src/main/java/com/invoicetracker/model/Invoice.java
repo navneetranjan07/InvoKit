@@ -43,7 +43,7 @@ public class Invoice {
     private Client client;
 
     @NotNull
-    @Column(name = "invoice_number", nullable = false, unique = true, length = 50)
+    @Column(name = "invoice_number", nullable = false, length = 50)
     private String invoiceNumber;
 
     private String title;

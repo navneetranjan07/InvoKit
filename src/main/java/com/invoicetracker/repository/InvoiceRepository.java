@@ -30,8 +30,8 @@ public interface InvoiceRepository extends JpaRepository<Invoice, Long> {
 
     List<Invoice> findByClientId(Long clientId);
 
-    boolean existsByInvoiceNumber(String invoiceNumber);
-
+//    boolean existsByInvoiceNumber(String invoiceNumber);
+boolean existsByInvoiceNumberAndUserId(String invoiceNumber, Long userId);
     long countByUserId(Long userId);
 
     long countByUserIdAndStatus(Long userId, InvoiceStatus status);
