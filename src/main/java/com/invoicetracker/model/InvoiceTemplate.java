@@ -32,12 +32,12 @@ public class InvoiceTemplate {
 
     private String description;
 
-    @Lob
+//    @Lob
     @Column(name = "html_template", nullable = false)
     private String htmlTemplate;
 
-    @Lob
-    @Column(name = "css_styles")
+//    @Lob
+    @Column(name = "css_styles",columnDefinition = "TEXT")
     private String cssStyles;
 
     @Column(name = "is_premium")

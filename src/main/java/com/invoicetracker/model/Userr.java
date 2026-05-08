@@ -52,7 +52,8 @@ public class Userr {
     @Column(length = 50)
     private String phone;
 
-    @Lob
+//    @Lob
+@Column(columnDefinition = "TEXT")
     private String address;
 
     @Column(length = 100)

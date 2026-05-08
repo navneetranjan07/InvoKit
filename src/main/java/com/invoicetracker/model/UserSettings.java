@@ -38,8 +38,8 @@ public class UserSettings {
     @Builder.Default
     private BigDecimal defaultTaxRate = BigDecimal.ZERO;
 
-    @Lob
-    @Column(name = "default_payment_terms")
+//    @Lob
+    @Column(name = "default_payment_terms",columnDefinition = "TEXT")
     private String defaultPaymentTerms;
 
     @Column(name = "invoice_number_prefix", length = 20)

@@ -49,8 +49,8 @@ public class PaymentReminder {
     @Column(name = "email_subject")
     private String emailSubject;
 
-    @Lob
-    @Column(name = "email_body")
+//    @Lob
+    @Column(name = "email_body",columnDefinition = "TEXT")
     private String emailBody;
 
     @Column(name = "is_sent")
