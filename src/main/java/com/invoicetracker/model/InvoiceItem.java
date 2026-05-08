@@ -48,7 +48,7 @@ public class InvoiceItem {
     @Column(precision = 15, scale = 2, nullable = false)
     private BigDecimal amount;
 
-    @Column(name = "sort_order")
+    @Column(name = "\"sort_order\"")
     @Builder.Default
     private Integer sortOrder = 0;
 

@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional(readOnly = true)//added later
 public class InvoiceService {
 
     @Autowired
