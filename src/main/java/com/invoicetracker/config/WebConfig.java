@@ -16,8 +16,10 @@ public class WebConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowedOrigins(Arrays.asList(
-                "http://localhost:5173",
-                "https://invokit-frontend.vercel.app/"
+                "http://localhost:5173", // localhost of PC
+                "capacitor://localhost", // for Android App
+                "http://localhost", // for iOS App
+                "https://invokit-frontend.vercel.app/" // deployed frontend on render
         ));
 
         config.setAllowedMethods(Arrays.asList(

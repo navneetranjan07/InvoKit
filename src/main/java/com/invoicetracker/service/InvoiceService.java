@@ -67,7 +67,7 @@ public class InvoiceService {
 
         UserSettings settings = getOrCreateSettings(user);
 
-        // --- THE PERMANENT BUG FIX: ENSURE UNIQUE NUMBER PER USER ---
+        // Unique number per users
         String invoiceNum = settings.getNextInvoiceNumberFormatted();
         while (invoiceRepository.existsByInvoiceNumberAndUserId(invoiceNum, userId)) {
             settings.incrementInvoiceNumber();
