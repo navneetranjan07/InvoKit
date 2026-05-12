@@ -17,9 +17,11 @@ public class WebConfig {
 
         config.setAllowedOrigins(Arrays.asList(
                 "http://localhost:5173", // localhost of PC
+                "https://localhost", // secure http
                 "capacitor://localhost", // for Android App
                 "http://localhost", // for iOS App
-                "https://invokit-frontend.vercel.app/" // deployed frontend on render
+                "https://invokit-frontend.vercel.app/", // deployed frontend on render
+                "https://invokit-frontend.vercel.app" // removed trailing slash
         ));
 
         config.setAllowedMethods(Arrays.asList(
